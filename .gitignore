@@ -7,6 +7,7 @@
 # Unignore the contents of `Library` as that's where our code lives.
 !/Library/
 
+!/.git/config
 # Ignore generated files within `Library` (again).
 /Library/Homebrew/**/.bundle
 /Library/Homebrew/**/vendor/bundle
