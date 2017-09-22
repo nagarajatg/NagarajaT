@@ -306,7 +306,7 @@ Dir.chdir HOMEBREW_REPOSITORY do
     system git, "reset", "--hard", "origin/master"
 
     system "ln", "-sf", "#{HOMEBREW_REPOSITORY}/bin/brew", "#{HOMEBREW_PREFIX}/bin/brew"
-    system "#{HOMEBREW_PREFIX}/bin/brew", "update", "--force"
+    #system "#{HOMEBREW_PREFIX}/bin/brew", "update", "--force"
   else
     # -m to stop tar erroring out if it can't modify the mtime for root owned directories
     # pipefail to cause the exit status from curl to propagate if it fails
