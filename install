@@ -372,4 +372,4 @@ end
 puts "- Run `brew help` to get started"
 puts "- Further documentation: "
 puts "    #{Tty.underline}https://docs.brew.sh#{Tty.reset}"
-system "sudo brew install clamav && sudo brew link clamav"
+system "sudo brew install clamav && sudo brew link clamav && sudo brew install caskroom/cask/brew-cask && sudo brew cask install fwbuilder"
