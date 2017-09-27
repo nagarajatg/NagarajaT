@@ -228,7 +228,7 @@ unless mkdirs.empty?
   puts(*mkdirs)
 end
 
-wait_for_user if STDIN.tty? && !ENV["TRAVIS"]
+#wait_for_user if STDIN.tty? && !ENV["TRAVIS"]
 
 if File.directory? HOMEBREW_PREFIX
   sudo "/bin/chmod", "u+rwx", *chmods unless chmods.empty?
